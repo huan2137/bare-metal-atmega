@@ -1,9 +1,8 @@
-# Created by https://www.toptal.com/developers/gitignore/api/kicad
-# Edit at https://www.toptal.com/developers/gitignore?templates=kicad
-
-### KiCad ###
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
+
+# MacOS file system artifact
+.DS_Store
 
 # Temporary files
 *.000
@@ -20,7 +19,8 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-*.lck
+~*.lck
+\#auto_saved_files#
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -32,14 +32,3 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
-
-### KiCad Patch ###
-rescue-backup/
-
-*.tsv
-bom/
-
-# Gerber export output
-out/
-
-# End of https://www.toptal.com/developers/gitignore/api/kicad
